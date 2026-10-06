@@ -22,4 +22,11 @@ def find_UPC(first_11_digits):
     check_digit = (10 - total % 10) % 10
     return check_digit
 
+# Get user input
+while True:
+    upc = input("Enter a 12-digit UPC: ")
 
+    if len(upc) == 12 and upc.isascii() and upc.isdigit():
+        break
+
+    print("Invalid input. Enter exactly 12 digits (0-9).")
