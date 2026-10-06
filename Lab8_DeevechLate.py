@@ -30,3 +30,6 @@ while True:
         break
 
     print("Invalid input. Enter exactly 12 digits (0-9).")
+
+first_11_digits = upc[:11]
+provided_check_digit = int(upc[11])
