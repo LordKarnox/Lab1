@@ -34,8 +34,15 @@ while True:
 first_11_digits = upc[:11]
 provided_check_digit = int(upc[11])
 
-#Display the info
+# Display the info
 print(f"\nThe first 11 digits are '{first_11_digits}'.")
 print(f"The provided check digit is '{provided_check_digit}'.")
 print("\nCalculating...")
 
+expected_check_digit = find_UPC(first_11_digits)
+print(f"The expected check digit is {expected_check_digit}.")
+
+if expected_check_digit == provided_check_digit:
+    print("\nThis is a VALID UPC.")
+else:
+    print("\nThis is an INVALID UPC.")
