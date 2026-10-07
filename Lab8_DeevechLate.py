@@ -33,3 +33,9 @@ while True:
 
 first_11_digits = upc[:11]
 provided_check_digit = int(upc[11])
+
+#Display the info
+print(f"\nThe first 11 digits are '{first_11_digits}'.")
+print(f"The provided check digit is '{provided_check_digit}'.")
+print("\nCalculating...")
+
